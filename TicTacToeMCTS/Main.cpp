@@ -99,7 +99,7 @@ void AIMenu() {
 void PlayerMenu() {
 	if (c_mainTurnIndex) {
 		int currentIndexChoosen;
-		std::cout << "Waehlen Sie mittels Ihres Numpads ein erlaubtes Spielfeld aus: " << std::endl;
+		std::cout << "Use numpad to choose field: " << std::endl;
 		std::cin >> currentIndexChoosen;
 		currentIndexChoosen--; //So PC can more easily use the numpad
 		if (gameStateArray[currentIndexChoosen] == 0 && currentIndexChoosen < 9 && currentIndexChoosen >= 0) {
