@@ -14,7 +14,7 @@ Imagine going on a holiday for two weeks, where you want to eat out each evening
 
 <img src="https://latex.codecogs.com/svg.image?\text{UCB1}=\overline{X}_{j}&space;&plus;&space;\sqrt{\frac{2\ln(n)}{n_{j}}}">
 
-Where <img src="https://latex.codecogs.com/svg.image?\overline{X}_{j}"> is the mean reward of node <img src="https://latex.codecogs.com/svg.image?j">
+Where <img src="https://latex.codecogs.com/svg.image?\overline{X}_{j}"> is the mean reward of node <img src="https://latex.codecogs.com/svg.image?j">. 
 It presents a good trade-off between exploring options which haven't been visited often, and exploiting the current best option. And is the formula I use to find the best Child at each layer.
 
 ### Expansion
