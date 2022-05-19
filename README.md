@@ -22,9 +22,10 @@ It presents a good trade-off between exploring options which haven't been visite
 After the Selection has reached a leaf node an Expansion begins. In which a random action from the pool of possible actions that are left at the current state, is selected. A new node Element with the new gameState is created.
 
 ### Simulation
-In the simulation step the new gameState will be evaluated.
+In the simulation step the new gameState will be evaluated. //To-Do
 
 ### Backpropagation
+//To-Do
 
 ## Future work
 - Frontend :    Currently there is no other GUI other then the terminal. Inspired by the work of [vgarciasc](https://github.com/vgarciasc/mcts-viz) I want to                   create a representation that shows how the tree expands. But unlike in vgarciasc work, where the tree can only be expanded by the user stepwise.                 I want to make a representation in which the tree grows kinda like in a time lapse without further input by the user. 
