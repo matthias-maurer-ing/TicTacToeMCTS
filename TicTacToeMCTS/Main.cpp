@@ -14,7 +14,7 @@ GameState gameMode = MainMode; //The switch variable shows in which state the fi
 
 //Assistance Data
 int totalAmountOfGames = 0;
-int totalAmountOfDefeatForMCTS = 0;
+int totalAmountOfWinsForMCTS = 0;
 
 //Configuration
 float c_explorationValue=8; //Degree of exploration the higer it is, the more exploration is going to happen
@@ -51,11 +51,12 @@ void MainMenu() {
 	std::cout << "Select game Mode: 0 = Simulation, 1 = Play, 2 = End Game " << std::endl;
 	std::cin >> selectGameMode;
 	if (selectGameMode == 0) { 
+		std::cout << "Calculations are running, please wait..."<< std::endl;
 		c_showMainGame = false;
 		c_playerMode = false; 
 		gameStateArray = new int[9]{ 0 };
 		totalAmountOfGames = 0;
-		totalAmountOfDefeatForMCTS = 0;
+		totalAmountOfWinsForMCTS = 0;
 		gameMode = AIMode;
 	}
 	else if (selectGameMode == 1) { 
@@ -133,7 +134,7 @@ void MCTSMode() {
 //Displays the results of the current game
 void DisplayCurrentResults() {
 	int finalRewardForDisplay = CalcReward(gameStateArray);
-	if (finalRewardForDisplay == -1) { totalAmountOfDefeatForMCTS++; }
+	if (finalRewardForDisplay == 1){ totalAmountOfWinsForMCTS++; }
 
 	if (c_showMainGame) {
 		if (finalRewardForDisplay == 1) { std::cout << "AI Won!" << std::endl; }
@@ -148,9 +149,9 @@ void DisplayCurrentResults() {
 //Displays the final combined result of all games that have been made
 void DisplayAllResults() {
 	std::cout << std::endl;
-	std::cout << "Amount of Iterations: " << c_maxAmountOfMCTSIterations << std::endl;
-	std::cout << "Value of Exploration: " << c_explorationValue << std::endl;
-	std::cout << "Amount of defeats: " << totalAmountOfDefeatForMCTS << std::endl;
-	std::cout << "Amount of Games: " << totalAmountOfGames << std::endl;
-	std::cout << "Win Ratio MCTS: " << 1 - (float(totalAmountOfDefeatForMCTS) / float(totalAmountOfGames)) << std::endl;
+	std::cout << "Amount of iterations: " << c_maxAmountOfMCTSIterations << std::endl;
+	std::cout << "Value of exploration: " << c_explorationValue << std::endl;
+	std::cout << "Amount of games: " << totalAmountOfGames << std::endl;
+	//std::cout << "Win ratio MCTS: " << (float(totalAmountOfWinsForMCTS) / float(totalAmountOfGames)) << std::endl;
+	printf("Win ratio MCTS: %d%% \n", (int)(100*(float(totalAmountOfWinsForMCTS) / float(totalAmountOfGames))));
 }
