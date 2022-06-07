@@ -24,9 +24,7 @@ In the simulation phase the newly created game state will be used as a starting 
 
 #### How can random simulations lead to anything useful?  
 
-Given the following function: <img src="https://latex.codecogs.com/svg.image?f(x)=x^2
-"> in this interval: <img src="https://latex.codecogs.com/svg.image?x\in&space;[0,1]">
-<iframe src="https://www.desmos.com/calculator/obsa5w7dsh?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+Given the following function: <img src="https://latex.codecogs.com/svg.image?f(x)=x^2"> in this interval: <img src="https://latex.codecogs.com/svg.image?x\in&space;[0,1]"><img src="blob:https://www.desmos.com/2750c721-3d64-4213-85a5-a47c2bef870d">
 
 How do you go about estimating the are beneath the function non analyticaly?
 Random simulations!
