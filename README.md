@@ -10,7 +10,7 @@ Play Mode: User vs. AI (MCTS)
 
 Simulation Mode: AI (Random decisions) vs. AI (MCTS)
 
-<img src="https://user-images.githubusercontent.com/105277072/172359589-d3078d43-dff1-43a3-9468-cc546f295708.PNG" width="500">
+<img src="https://user-images.githubusercontent.com/105277072/172371164-f31c58a1-cb6b-45b3-a6a2-6c5d200e1d1b.PNG" width="500">
 
 ## MCTS How it works
 The Monte Carlo Tree Search is a method for finding solutions to decision-making problems by using random Simulations as a way to make good predictions. An asymmetrical tree is built around the root node, by repeatedly iterating over the following 4 steps: Selection, expansion, simulation and backpropagation.  
