@@ -16,7 +16,8 @@ Simulation Mode: AI (Random decisions) vs. AI (MCTS)
 The Monte Carlo Tree Search is a method for finding solutions to decision-making problems by using random Simulations as a way to make good predictions. An asymmetrical tree is built around the root node, by repeatedly iterating over the following 4 steps: Selection, expansion, simulation and backpropagation.  
 
 <img src="https://i.stack.imgur.com/DsSXt.png" width="500">
-[Source](https://ai.stackexchange.com/questions/23811/how-does-the-mcts-tree-look-like)
+
+[Image source](https://ai.stackexchange.com/questions/23811/how-does-the-mcts-tree-look-like)
 
 ### Selection
 In the selection phase, the algorithm wants to find the best child Node so that the tree can grow in the most prospering areas.
