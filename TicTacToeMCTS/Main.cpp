@@ -152,6 +152,5 @@ void DisplayAllResults() {
 	std::cout << "Amount of iterations: " << c_maxAmountOfMCTSIterations << std::endl;
 	std::cout << "Value of exploration: " << c_explorationValue << std::endl;
 	std::cout << "Amount of games: " << totalAmountOfGames << std::endl;
-	//std::cout << "Win ratio MCTS: " << (float(totalAmountOfWinsForMCTS) / float(totalAmountOfGames)) << std::endl;
 	printf("Win ratio MCTS: %d%% \n", (int)(100*(float(totalAmountOfWinsForMCTS) / float(totalAmountOfGames))));
 }
