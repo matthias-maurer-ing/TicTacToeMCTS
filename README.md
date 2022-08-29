@@ -28,7 +28,7 @@ So we can use the following formula, called Upper Confidence Bound (UCB1), which
 
 <img src="https://latex.codecogs.com/svg.image?\bg{white}\text{UCB1}=\overline{X}_{j}&space;&plus;&space;\sqrt{\frac{2\ln(n)}{n_{j}}}"> 
 
-The left term of the formula represents the exploiting term, where <img src="https://latex.codecogs.com/svg.image?\bg{white}\overline{X}_{j}"> is the mean reward of the node <img src="https://latex.codecogs.com/svg.image?\bg{white}\j">. The right term of the formula represents the exploration term. Where  <img src="https://latex.codecogs.com/svg.image?\bg{white}\n&space;"> is the amount of times the parent node has been visited. And <img src="https://latex.codecogs.com/svg.image?\bg{white}\n_{j}"> represents the amount of times the current node <img src="https://latex.codecogs.com/svg.image?\bg{white}\j"> has been visited.
+The left term of the formula represents the exploiting term, where <img src="https://latex.codecogs.com/svg.image?\overline{X}_{j}"> is the mean reward of the node <img src="https://latex.codecogs.com/svg.image?\bg{white}j">. The right term of the formula represents the exploration term. Where  <img src="https://latex.codecogs.com/svg.image?\bg{white}n&space;"> is the amount of times the parent node has been visited. And <img src="https://latex.codecogs.com/svg.image?\bg{white}n_{j}"> represents the amount of times the current node <img src="https://latex.codecogs.com/svg.image?\bg{white}j"> has been visited.
 
 It presents a good trade-off between exploring options which haven't been visited often, and exploiting the current best option. It is the formula I use to find the best child at each layer.
 
