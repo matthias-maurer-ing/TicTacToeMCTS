@@ -46,7 +46,7 @@ In the end, the reward of the simulation is getting backpropagated to the root n
 
 ## Results
 
-![github sim](https://user-images.githubusercontent.com/105277072/187986721-42ea5594-ae6a-4148-bb20-be0838e0b8e0.PNG width="500")
+<img src="https://user-images.githubusercontent.com/105277072/187986721-42ea5594-ae6a-4148-bb20-be0838e0b8e0.PNG" width="500">
 
 As one can clearly see here, the AI which was build using the MCTS clearly outperforms the AI which simply makes random decisions. This can also be observed when playing the game, as the AI clearly anticipates when the User tries to outmaneuver it. With a common win rate at around 90%+ for the MCTS AI, I consider this a successful project. 
 
