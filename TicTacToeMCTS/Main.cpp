@@ -15,6 +15,7 @@ GameState gameMode = MainMode; //The switch variable shows in which state the fi
 //Assistance Data
 int totalAmountOfGames = 0;
 int totalAmountOfWinsForMCTS = 0;
+int totalAmountOfLosesForMCTS = 0;
 
 //Configuration
 float c_explorationValue=8; //Degree of exploration the higer it is, the more exploration is going to happen
@@ -57,6 +58,7 @@ void MainMenu() {
 		gameStateArray = new int[9]{ 0 };
 		totalAmountOfGames = 0;
 		totalAmountOfWinsForMCTS = 0;
+		totalAmountOfLosesForMCTS = 0;
 		gameMode = AIMode;
 	}
 	else if (selectGameMode == 1) { 
@@ -135,6 +137,7 @@ void MCTSMode() {
 void DisplayCurrentResults() {
 	int finalRewardForDisplay = CalcReward(gameStateArray);
 	if (finalRewardForDisplay == 1){ totalAmountOfWinsForMCTS++; }
+	if (finalRewardForDisplay == -1){ totalAmountOfLosesForMCTS++; }
 
 	if (c_showMainGame) {
 		if (finalRewardForDisplay == 1) { std::cout << "AI Won!" << std::endl; }
@@ -152,5 +155,9 @@ void DisplayAllResults() {
 	std::cout << "Amount of iterations: " << c_maxAmountOfMCTSIterations << std::endl;
 	std::cout << "Value of exploration: " << c_explorationValue << std::endl;
 	std::cout << "Amount of games: " << totalAmountOfGames << std::endl;
-	printf("Win ratio MCTS: %d%% \n", (int)(100*(float(totalAmountOfWinsForMCTS) / float(totalAmountOfGames))));
+	std::cout << std::endl;
+	std::cout << "MCTS wins: " << totalAmountOfWinsForMCTS << std::endl;
+	std::cout << "Draw: " << (totalAmountOfGames- totalAmountOfWinsForMCTS- totalAmountOfLosesForMCTS) << std::endl;
+	std::cout << "MCTS loses: " << totalAmountOfLosesForMCTS << std::endl;
+	std::cout << std::endl;
 }
