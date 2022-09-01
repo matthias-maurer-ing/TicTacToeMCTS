@@ -6,11 +6,11 @@ Currently, there are 2 game modes:
 
 Play Mode: Here the User plays against the AI (MCTS).
 
-<img src="https://user-images.githubusercontent.com/105277072/172359594-08e425ba-c38f-4314-8cdc-d9dd40e9f91b.PNG" width="500">
+<img src="https://user-images.githubusercontent.com/105277072/172359594-08e425ba-c38f-4314-8cdc-d9dd40e9f91b.PNG" width="600">
 
 Simulation Mode: Here the AI (MCTS) plays against an AI (Random) which makes random decisions.
 
-<img src="https://user-images.githubusercontent.com/105277072/172371164-f31c58a1-cb6b-45b3-a6a2-6c5d200e1d1b.PNG" width="500">
+<img src="https://user-images.githubusercontent.com/105277072/172371164-f31c58a1-cb6b-45b3-a6a2-6c5d200e1d1b.PNG" width="600">
 
 ## MCTS How it works
 The Monte Carlo Tree Search is a method for finding solutions to decision-making problems by using random Simulations as a way to make good predictions. An asymmetrical tree is built around the current turn, by repeatedly iterating over these 4 steps: Selection, expansion, simulation and backpropagation.  
@@ -46,7 +46,7 @@ In the end, the reward of the simulation is getting backpropagated to the root n
 
 ## Results
 
-<img src="https://user-images.githubusercontent.com/105277072/187986721-42ea5594-ae6a-4148-bb20-be0838e0b8e0.PNG" width="500">
+<img src="https://user-images.githubusercontent.com/105277072/187986721-42ea5594-ae6a-4148-bb20-be0838e0b8e0.PNG" width="600">
 
 As one can clearly see here, the AI which was build using the MCTS clearly outperforms the AI which simply makes random decisions. This can also be observed when playing the game, as the AI clearly anticipates when the User tries to outmaneuver it. With a common win rate at around 90%+ for the MCTS AI, I consider this a successful project. 
 
